@@ -1,20 +1,25 @@
 package PastaAtividade4;
 
-import java.util.Scanner;
-
 public class exe1 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
-        System.out.print("Informe uma frase: ");
-        String st = sc.nextLine();
 
-        String[] st1 = st.split("\\s+");
+        String frase= "Socorram-me, subi no ônibus em Marrocos";
+        String fraseInvertida = "";
 
-        for(int i = st1.length - 1; i >= 0; i--){
-            System.out.print(st1[i] + " ");
+        String palavra[] = frase.split(" ");
+
+
+        for(int i = palavra.length-1;i >= 0;i--){
+            fraseInvertida = fraseInvertida.concat(palavra[i]+" ");
         }
 
-        sc.close();
+        fraseInvertida = fraseInvertida.substring(0, fraseInvertida.length()-1);
+
+        System.out.println("Frase Original: \n" + frase);
+        System.out.println("\nFrase Invertida: \n" + fraseInvertida);
+
+
+
     }
 }
