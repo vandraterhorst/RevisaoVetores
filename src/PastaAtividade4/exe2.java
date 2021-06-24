@@ -1,4 +1,4 @@
-package exerciciosaula4;
+package PastaAtividade4;
 
 
 import java.util.Scanner;

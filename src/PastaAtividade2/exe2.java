@@ -1,4 +1,4 @@
-package RevisaoVetores;
+package PastaAtividade2;
 
 import java.util.Scanner;
 import java.util.Arrays;

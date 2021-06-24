@@ -1,4 +1,4 @@
-package strings;
+package PastaAtividade3;
 
 import java.util.Scanner;
 
