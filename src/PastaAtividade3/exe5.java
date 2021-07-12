@@ -1,5 +1,4 @@
 package PastaAtividade3;
-
 import java.util.Scanner;
 
 public class exe5 {
@@ -8,13 +7,13 @@ public class exe5 {
         Scanner frase = new Scanner(System.in);
 
 
-        System.out.println("Digite uma frase: ");
+        System.out.println("Escreva uma frase: ");
 
         String palavras = frase.nextLine();
 
         palavras = palavras.trim().replaceAll("\\s+", " ");
 
-        System.out.println("Frase digitada sem espacos desnecessarios: \n"+ palavras);
+        System.out.println("Frase escrita sem espacos desnecessarios: \n"+ palavras);
 
     }
 }

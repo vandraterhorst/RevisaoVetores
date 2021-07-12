@@ -10,7 +10,7 @@ public class exe2 {
 
         int n = 0;
 
-        System.out.println("Informe um numero: \n");
+        System.out.println("Digite um numero: \n");
         n = ler.nextInt();
 
         String s =  n + "";
@@ -19,34 +19,34 @@ public class exe2 {
             String valor = "";
             switch (s.charAt(i)){
                 case '0':
-                    valor = "zero";
+                    valor = "Zero";
                     break;
                 case '1':
-                    valor = "um";
+                    valor = "Um";
                     break;
                 case '2':
-                    valor = "dois";
+                    valor = "Dois";
                     break;
                 case '3':
-                    valor = "três";
+                    valor = "Três";
                     break;
                 case '4':
-                    valor = "quatro";
+                    valor = "Quatro";
                     break;
                 case '5':
-                    valor = "cinco";
+                    valor = "Cinco";
                     break;
                 case '6':
-                    valor = "seis";
+                    valor = "Seis";
                     break;
                 case '7':
-                    valor = "sete";
+                    valor = "Sete";
                     break;
                 case '8':
-                    valor = "oito";
+                    valor = "Oito";
                     break;
                 case '9':
-                    valor = "nove";
+                    valor = "Nove";
                     break;
                 default:
                     break;

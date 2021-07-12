@@ -1,14 +1,16 @@
 package PastaAtividade3;
-
 import java.util.Scanner;
+
+
+
 public class exe1 {
     public static void main(String[] args){
 
         Scanner frase = new Scanner(System.in);
         String s;
-        int contV = 0;
-        int contD = 0;
-        System.out.println("Digite uma frase: \n");
+        int contVogais = 0;
+        int contdig = 0;
+        System.out.println("Escreva uma frase: \n");
         s = frase.nextLine();
 
 
@@ -19,41 +21,42 @@ public class exe1 {
         for(int i=0; i<s.length(); i++){
             char c = s.charAt(i);
             if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'){
-                contV++;
+                contVogais++;
             }
 
         }
-        System.out.println("Numero de vogais: " +contV);
+        System.out.println("Numero de vogais: " +contVogais);
 
         if(s.toLowerCase().startsWith("uni")){
-            System.out.println("Inicia com Uni!");
+            System.out.println("Inica com Uni");
         }else{
-            System.out.println("Nao inicia com Uni!");
+            System.out.println("Nao inicia com Uni");
         }
 
         if(s.toLowerCase().endsWith("rio")){
-            System.out.println("Termina com Uni!");
+            System.out.println("Termina com Uni");
         }else{
-            System.out.println("Nao termina com Uni!!");
+            System.out.println("Nao termina com Uni");
         }
 
-
+//numero de digitos
         for(int i=0; i<s.length(); i++){
             if(Character.isDigit(s.charAt(i))){
-                contD ++;
+                contdig ++;
             }
         }
-        System.out.println("A string tem " + contD + " digitos.");
+        System.out.println("A string tem " + contdig + " digitos");
 
+//mostra se eh um palindromo
 
         StringBuilder sb = new StringBuilder();
         for(int i = s.length()-1; i>=0; i--){
             sb.append(s.charAt(i) );
         }
         if(s.equals(sb.toString())){
-            System.out.println("É um palindromo!");
+            System.out.println("É um palindromo");
         }else{
-            System.out.println("Não é um palindromo!");
+            System.out.println("Não é um palindromo");
         }
 
 
